@@ -1,0 +1,10 @@
+.background{
+    -fx-background-color: rgb(192, 192, 192);
+    -fx-background-image: url('../assets/img/map-800w-600h.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+.room0{
+    -fx-background-image: url('../assets/img/store-800w-600h.jpg');
+     -fx-background-size: 100% 100%;
+}

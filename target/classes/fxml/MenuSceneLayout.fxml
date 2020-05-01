@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<BorderPane 
+fx:id="menuPane" 
+prefWidth="1080"            
+prefHeight="720"
+xmlns:fx="https://google.com/"
+fx:controller="io.javasmithy.controller.scene.main.MenuSceneController">
+        <top>
+            <Label text="RPG GAME"/>
+        </top>
+        <center>
+            <VBox
+            alignment="CENTER"
+            fx:id="menuButtons"
+            spacing="20">
+                
+                <children>
+                    <Button 
+                    fx:id="newGameBtn"
+                    text="New"
+                    onAction="#openCreationScene"/>
+                    <Button text = "Continue" fx:id="continueBtn" onAction="#openGameScene"/>
+                    <Button text="Load"/>
+                    <Button text="Save"/>
+                    <Button text="Exit" fx:id="exit" onAction="#exitGame"/>
+                </children>
+
+            </VBox>
+        </center>
+</BorderPane>
